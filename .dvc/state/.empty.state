@@ -1,0 +1,17 @@
+{
+  "CodeDependencies": [], 
+  "OutputFiles": [], 
+  "Version": "0.1", 
+  "Command": "empty", 
+  "Stderr": null, 
+  "InputFiles": [], 
+  "Type": "DVC-State", 
+  "Cwd": ".", 
+  "Shell": false, 
+  "Stdout": null, 
+  "Argv": [
+    "/home/efiop/virtenvs/dvc/bin/dvc", 
+    "init"
+  ], 
+  "CreatedAt": "2017-09-17 00:33:04 +0300"
+}
