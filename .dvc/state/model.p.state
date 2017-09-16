@@ -1,0 +1,26 @@
+{
+  "CodeDependencies": [
+    "code/train_model.py"
+  ], 
+  "OutputFiles": [
+    "data/model.p"
+  ], 
+  "Version": "0.1", 
+  "Command": "run", 
+  "Stderr": null, 
+  "InputFiles": [
+    "data/matrix-train.p"
+  ], 
+  "Type": "DVC-State", 
+  "Cwd": ".", 
+  "Shell": false, 
+  "Stdout": null, 
+  "Argv": [
+    "python", 
+    "code/train_model.py", 
+    "data/matrix-train.p", 
+    "20170426", 
+    "data/model.p"
+  ], 
+  "CreatedAt": "2017-09-17 00:33:20 +0300"
+}
