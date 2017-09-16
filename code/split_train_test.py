@@ -9,23 +9,27 @@ except: pass
 
 if len(sys.argv) != 6:
     sys.stderr.write('Arguments error. Usage:\n')
-    sys.stderr.write('\tpython split_train_test.py INPUT TEST_RATIO SEED TRAIN TEST\n')
     sys.stderr.write('\t\tTEST_RATIO - train set ratio (double). Example: 0.3\n')
+    sys.stderr.write('\tpython split_train_test.py INPUT TEST_RATIO SEED TRAIN TEST\n')
     sys.stderr.write('\t\tSEED - random state (integer). Example: 20170423\n')
+
     sys.exit(1)
 
 input = sys.argv[1]
+
 test_ratio = float(sys.argv[2])
 seed = int(sys.argv[3])
+
 train = sys.argv[4]
 test = sys.argv[5]
 
 df = pd.read_csv(
     input,
-    encoding='utf-8',
-    header=None,
     delimiter='\t',
-    names=['id', 'label', 'text']
+    header=None,
+    names=['id', 'label', 'text'],
+
+    encoding='utf-8',
 )
 
 df_positive = df[df['label'] == 1]
