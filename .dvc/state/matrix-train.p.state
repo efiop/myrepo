@@ -1,0 +1,29 @@
+{
+  "CodeDependencies": [
+    "code/featurization.py"
+  ], 
+  "OutputFiles": [
+    "data/matrix-test.p", 
+    "data/matrix-train.p"
+  ], 
+  "Version": "0.1", 
+  "Command": "run", 
+  "Stderr": null, 
+  "InputFiles": [
+    "data/Posts-train.tsv", 
+    "data/Posts-test.tsv"
+  ], 
+  "Type": "DVC-State", 
+  "Cwd": ".", 
+  "Shell": false, 
+  "Stdout": null, 
+  "Argv": [
+    "python", 
+    "code/featurization.py", 
+    "data/Posts-train.tsv", 
+    "data/Posts-test.tsv", 
+    "data/matrix-train.p", 
+    "data/matrix-test.p"
+  ], 
+  "CreatedAt": "2017-09-17 00:33:14 +0300"
+}
