@@ -1,0 +1,26 @@
+{
+  "CodeDependencies": [
+    "code/xml_to_tsv.py"
+  ], 
+  "OutputFiles": [
+    "data/Posts.tsv"
+  ], 
+  "Version": "0.1", 
+  "Command": "run", 
+  "Stderr": null, 
+  "InputFiles": [
+    "data/Posts.xml"
+  ], 
+  "Type": "DVC-State", 
+  "Cwd": ".", 
+  "Shell": false, 
+  "Stdout": null, 
+  "Argv": [
+    "python", 
+    "code/xml_to_tsv.py", 
+    "data/Posts.xml", 
+    "data/Posts.tsv", 
+    "python"
+  ], 
+  "CreatedAt": "2017-09-17 00:33:10 +0300"
+}
